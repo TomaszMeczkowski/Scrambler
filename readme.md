@@ -24,19 +24,26 @@ Aplikacja webowa napisana w Django, która umożliwia przesyłanie pliku tekstow
 ```bash
 git clone https://github.com/TwojeKonto/django-text-scrambler.git
 cd django-text-scrambler
+``` 
 
-# Utwórz środowisko
+### 2. Utwórz i aktywuj środowisko
+```bash
 python -m venv venv
-
-# Aktywuj środowisko
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
+```
 
-# Zainstaluj zależności
+### 3. Zainstaluj zależności
+```bash
 pip install .
+```
 
-# Wykonaj migracje bazy danych
+### 4. Wykonaj migracje bazy danych
+```bash
 python manage.py migrate
+```
 
-# Uruchom serwer
+### 5. Uruchom serwer
+```bash
 python manage.py runserver
+```
