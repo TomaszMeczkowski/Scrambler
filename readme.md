@@ -44,7 +44,7 @@ DEBUG=True
 
 ### 4. Zainstaluj zależności
 ```bash
-pip install .
+pip install .[dev]
 ```
 
 ### 5. Wykonaj migracje bazy danych
