@@ -33,17 +33,26 @@ source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 ```
 
-### 3. Zainstaluj zależności
+
+### 3. Skonfiguruj zmienne środowiskowe
+Utwórz w katalogu config projektu plik `.env` z następującą zawartością (Sekret Django zmień na własny unikalny ciąg znaków):
+
+```env
+SECRET_KEY=django-insecure-moj-sekret
+DEBUG=True
+```
+
+### 4. Zainstaluj zależności
 ```bash
 pip install .
 ```
 
-### 4. Wykonaj migracje bazy danych
+### 5. Wykonaj migracje bazy danych
 ```bash
 python manage.py migrate
 ```
 
-### 5. Uruchom serwer
+### 6. Uruchom serwer
 ```bash
 python manage.py runserver
 ```
