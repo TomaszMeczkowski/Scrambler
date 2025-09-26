@@ -22,8 +22,8 @@ Aplikacja webowa napisana w Django, która umożliwia przesyłanie pliku tekstow
 
 ### 1. Sklonuj repozytorium
 ```bash
-git clone https://github.com/TwojeKonto/django-text-scrambler.git
-cd django-text-scrambler
+git clone https://github.com/TomaszMeczkowski/Scrambler.git
+cd Scrambler
 ``` 
 
 ### 2. Utwórz i aktywuj środowisko
