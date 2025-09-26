@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title mb-4 text-center">Wynik przetwarzania</h2>
+
+                {% if result %}
+                    <pre class="p-3 bg-light border rounded" style="white-space: pre-wrap;">{{ result }}</pre>
+                {% else %}
+                    <div class="alert alert-warning text-center">
+                        Brak danych. Wróć na <a href="{% url 'upload_file' %}" class="alert-link">stronę główną</a>.
+                    </div>
+                {% endif %}
+
+                <div class="d-flex justify-content-center mt-4">
+                    <a href="{% url 'upload_file' %}" class="btn btn-outline-secondary">Prześlij nowy plik</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
