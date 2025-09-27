@@ -18,7 +18,7 @@ def scramble_text(text: str) -> str:
 
 
 def upload_file(request):
-    """Strona główna z formularzem"""
+    """Main page with file upload form."""
     if request.method == "POST":
         form = UploadFileForm(request.POST, request.FILES)
         if form.is_valid():
@@ -34,6 +34,6 @@ def upload_file(request):
 
 
 def result_view(request):
-    """Strona z wynikiem"""
+    """Page that displays the scrambled result."""
     result = request.session.get("result", None)
     return render(request, "results.html", {"result": result})
